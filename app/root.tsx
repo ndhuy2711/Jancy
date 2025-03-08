@@ -9,6 +9,10 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import "./owl.carousel.css";
+import "./aminate.css";
+import "./ckeditor.css";
+import "./site.css";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -29,6 +33,24 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossOrigin="anonymous"
+        ></link>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+          rel="stylesheet"
+        ></link>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        ></link>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css"
+        ></link>
         <Meta />
         <Links />
       </head>

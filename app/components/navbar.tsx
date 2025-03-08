@@ -1,9 +1,13 @@
+import Tiktok from "../images/icons/tiktok0.svg";
+import Facebook from "../images/icons/facebook0.svg"
+import LinkedIn from "../images/icons/linkedin0.svg";
+
 export default function Navbar() {
   return (
     <header
       className="header header-have-sub-1"
       id="header"
-      style={{ backgroundColor: "rgb(0, 0, 0) !important", top: "40px" }}
+      style={{ backgroundColor: "rgb(0, 0, 0)", top: "40px" }}
     >
       <section className="wrapper container container-header">
         <a href="/" className="brand">
@@ -23,7 +27,7 @@ export default function Navbar() {
         <nav className="navbar" id="navbar">
           <ul className="menu" id="menu">
             <li className="menu-item menu-dropdown">
-              <a href="/du-an" className="menu-link  active">
+              <a href="/du-an" className="menu-link">
                 Dự án
               </a>
 
@@ -184,7 +188,7 @@ export default function Navbar() {
                     href="https://www.tiktok.com/@hellojancyyy"
                     target="_blank"
                   >
-                    <img src="" alt="tiktok" />
+                    <img src={Tiktok} alt="tiktok" />
                   </a>
                 </li>
                 <li className="social-icon-item">
@@ -192,7 +196,7 @@ export default function Navbar() {
                     href="https://www.facebook.com/JANCYNGUYEN"
                     target="_blank"
                   >
-                    <img src="" alt="facebook" />
+                    <img src={Facebook} alt="facebook" />
                   </a>
                 </li>
                 <li className="social-icon-item">
@@ -200,7 +204,7 @@ export default function Navbar() {
                     href="https://www.linkedin.com/in/jancynguyen"
                     target="_blank"
                   >
-                    <img src="" alt="linkedin" />
+                    <img src={LinkedIn} alt="linkedin" />
                   </a>
                 </li>
               </ul>
