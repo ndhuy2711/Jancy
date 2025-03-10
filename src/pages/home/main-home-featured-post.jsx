@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function HomeFeaturedPost() {
+  useEffect(() => {
+    window.$(document).ready(function () {
+      window.$('.posts-section-owl-carousel').owlCarousel({
+        items: 3,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: false
+      });
+    });
+  }, [])
   return (
     <section className="section featured-posts">
       <div className="container container-home">
@@ -137,6 +148,7 @@ export default function HomeFeaturedPost() {
                   </div>
                 </div>
               </div>
+
               <div
                 className="owl-item"
                 style={{ width: "auto", marginRight: 24 }}
@@ -255,6 +267,7 @@ export default function HomeFeaturedPost() {
                   </div>
                 </div>
               </div>
+
               <div
                 className="owl-item active"
                 style={{ width: "auto", marginRight: 24 }}
@@ -375,115 +388,8 @@ export default function HomeFeaturedPost() {
                   </div>
                 </div>
               </div>
-              <div
-                className="owl-item cloned"
-                style={{ width: "auto", marginRight: 24 }}
-              >
-                <div className="item post-section-slide-item">
-                  <div className="post-item">
-                    <div
-                      className="post-image lozad-background"
-                      data-background-image="https://hellojancy.com/images/HELLO-JANCY-BANNER-BAI-VIET-1-57384.jpg"
-                      style={{
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
-                    />
-                    <div className="post-content">
-                      <h3 className="post-title">
-                        <a href="/bai-viet/can-ho-cao-cap-trung-tam-paphos-da-hoan-thanh">
-                          Chương trình Golden Visa Tây Ban Nha qua đầu tư BĐS sẽ
-                          dừng lại từ tháng 1/2025
-                        </a>
-                      </h3>
-                      <p className="post-description">
-                        Ngày 14/11 quốc hội Tây Ban Nha đã thông báo ctrinh
-                        Golden Visa Tây Ban Nha thông qua việc đầu tư BĐS sẽ
-                        dừng lại vào T1/2025.
-                      </p>
-                      <a
-                        className="load-more"
-                        href="/bai-viet/can-ho-cao-cap-trung-tam-paphos-da-hoan-thanh"
-                      >
-                        Đọc thêm
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="owl-item cloned"
-                style={{ width: "auto", marginRight: 24 }}
-              >
-                <div className="item post-section-slide-item">
-                  <div className="post-item">
-                    <div
-                      className="post-image lozad-background"
-                      data-background-image="https://hellojancy.com/images/HELLO-JANCY-BANNER-BAI-VIET-2-10427.jpg"
-                      style={{
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
-                    />
-                    <div className="post-content">
-                      <h3 className="post-title">
-                        <a href="/bai-viet/biet-thu-sang-trong-trung-tam-thanh-pho-paphos">
-                          DUBAI next stop to aquire real estate for your
-                          collection !!!
-                        </a>
-                      </h3>
-                      <p className="post-description">
-                        Cơ hội sở hữu căn hộ Dubai tuyệt vời chỉ từ 8 tỷ VND!
-                      </p>
-                      <a
-                        className="load-more"
-                        href="/bai-viet/biet-thu-sang-trong-trung-tam-thanh-pho-paphos"
-                      >
-                        Đọc thêm
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="owl-item cloned"
-                style={{ width: "auto", marginRight: 24 }}
-              >
-                <div className="item post-section-slide-item">
-                  <div className="post-item">
-                    <div
-                      className="post-image lozad-background"
-                      data-background-image="https://hellojancy.trustsite.vn/images/428674758_825032412972422_6802343121334493092_n.jpg"
-                      style={{
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
-                    />
-                    <div className="post-content">
-                      <h3 className="post-title">
-                        <a href="/bai-viet/can-ho-trung-tam-paphos-sip">
-                          CĂN HỘ TRUNG TÂM PAPHOS, SÍP
-                        </a>
-                      </h3>
-                      <p className="post-description">
-                        {" "}
-                        Với vị trí đắc địa, Galaxy Residences là sự lựa chọn lý
-                        tưởng cho những khách hàng muốn định cư tại Paphos hoặc
-                        đầu tư cho thuê với lợi nhuận cao.
-                      </p>
-                      <a
-                        className="load-more"
-                        href="/bai-viet/can-ho-trung-tam-paphos-sip"
-                      >
-                        Đọc thêm
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+
             </div>
           </div>
           <div className="owl-nav disabled">
@@ -495,24 +401,6 @@ export default function HomeFeaturedPost() {
             </button>
           </div>
           <div className="owl-dots">
-            <button role="button" className="owl-dot">
-              <span />
-            </button>
-            <button role="button" className="owl-dot">
-              <span />
-            </button>
-            <button role="button" className="owl-dot">
-              <span />
-            </button>
-            <button role="button" className="owl-dot active">
-              <span />
-            </button>
-            <button role="button" className="owl-dot">
-              <span />
-            </button>
-            <button role="button" className="owl-dot">
-              <span />
-            </button>
           </div>
         </div>
       </div>

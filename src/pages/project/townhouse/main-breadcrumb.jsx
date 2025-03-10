@@ -7,13 +7,13 @@ export default function TownHouseBreadcrumb() {
       <div className="container container-projects">
         <ul>
           <li className="breadcrumb-item">
-            <Link to href="/">Trang chủ</Link>
+            <Link to="/">Trang chủ</Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to href="/du-an">Dự án</Link>
+            <Link to="/du-an">Dự án</Link>
           </li>
           <li className="breadcrumb-item active">
-            <Link to href="/du-an/nha-pho#">Nhà phố</Link>
+            <Link to="/du-an/nha-pho#">Nhà phố</Link>
           </li>
         </ul>
       </div>

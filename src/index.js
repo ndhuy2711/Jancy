@@ -5,10 +5,11 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { TitleUpdater } from "../src/components/TitleUpdate"
 import _routes from "./_routes"
 import "./app.css";
-import "./owl.carousel.css";
+// import "./owl.carousel.css";
 import "./aminate.css";
 import "./ckeditor.css";
 import "./site.css";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>

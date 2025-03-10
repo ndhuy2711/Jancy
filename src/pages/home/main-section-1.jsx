@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Section1() {
+  useEffect(() => {
+    window.$(document).ready(function () {
+      window.$('.home-owl-carousel').owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:false
+      });
+    });
+  }, [])
   return (
     <>
       <section className="section home-section1">
@@ -17,7 +28,7 @@ export default function Section1() {
               <div className="owl-item cloned" style={{ width: "1440px" }}>
                 <div className="item">
                   <div
-                    className="backgroundImage desktop"
+                    className="background-image desktop"
                     style={{
                       backgroundImage: `url('https://hellojancy.com/images/jancy-BANNER%20%281%29.jpg')`,
                       backgroundRepeat: "no-repeat",
@@ -26,7 +37,7 @@ export default function Section1() {
                     }}
                   ></div>
                   <div
-                    className="backgroundImage mobile"
+                    className="background-image mobile"
                     style={{
                       backgroundImage:
                         "url('https://hellojancy.com/images/hello-jancy-banner-phone-7.jpg')",
@@ -62,7 +73,7 @@ export default function Section1() {
               <div className="owl-item cloned" style={{ width: "1440px" }}>
                 <div className="item">
                   <div
-                    className="backgroundImage desktop"
+                    className="background-image desktop"
                     style={{
                       backgroundImage:
                         "url('https://hellojancy.com/images/hello-jancy_11.jpg')",
@@ -72,7 +83,7 @@ export default function Section1() {
                     }}
                   ></div>
                   <div
-                    className="backgroundImage mobile"
+                    className="background-image mobile"
                     style={{
                       backgroundImage:
                         "url('https://hellojancy.com/images/jancy-2%20%286%29.jpg')",
@@ -105,7 +116,7 @@ export default function Section1() {
               <div className="owl-item" style={{ width: "1440px" }}>
                 <div className="item">
                   <div
-                    className="backgroundImage desktop"
+                    className="background-image desktop"
                     style={{
                       backgroundImage:
                         "url('https://hellojancy.com/images/jancy-banner%20%282%29-42964.jpg')",
@@ -115,7 +126,7 @@ export default function Section1() {
                     }}
                   ></div>
                   <div
-                    className="backgroundImage mobile"
+                    className="background-image mobile"
                     style={{
                       backgroundImage:
                         "url('https://hellojancy.com/images/hello-jancy-banner-phone-5%20%288%29-72949.jpg')",
@@ -137,183 +148,6 @@ export default function Section1() {
                         className="btn btn-primary rounded-10"
                       >
                         LIÊN HỆ JANCY
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="owl-item" style={{ width: "1440px" }}>
-                <div className="item">
-                  <div
-                    className="backgroundImage desktop"
-                    style={{
-                      backgroundImage:
-                        "url('https://hellojancy.com/images/jancy-BANNER%20%281%29.jpg')",
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  ></div>
-                  <div
-                    className="backgroundImage mobile"
-                    style={{
-                      backgroundImage:
-                        "url('https://hellojancy.com/images/hello-jancy-banner-phone-7.jpg')",
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  ></div>
-                  <div className="container container-home">
-                    <div className="home-carousel-content">
-                      <h1 className="title">
-                        Tư Vấn Đầu Tư Bất Động Sản Toàn cầu
-                      </h1>
-                      <p className="text">
-                        Phân tích xu hướng thị trường, đánh giá tiềm năng đầu
-                        tư và phát triển chiến lược đầu tư phù hợp với mục
-                        tiêu của khách{" "}
-                      </p>
-
-                      <button
-                        type="button"
-                        data-source="HomeTop"
-                        data-bs-toggle="modal"
-                        data-bs-target=".contact-modal"
-                        className="btn btn-primary rounded-10"
-                      >
-                        XEM DANH MỤC BĐS
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="owl-item active" style={{ width: "1440px" }}>
-                <div className="item">
-                  <div
-                    className="backgroundImage desktop"
-                    style={{
-                      backgroundImage:
-                        "url('https://hellojancy.com/images/hello-jancy_11.jpg')",
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  ></div>
-                  <div
-                    className="backgroundImage mobile"
-                    style={{
-                      backgroundImage:
-                        "url('https://hellojancy.com/images/jancy-2%20%286%29.jpg')",
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  ></div>
-                  <div className="container container-home">
-                    <div className="home-carousel-content">
-                      <h1 className="title fadeInDown animated">
-                        Am hiểu &amp; Chuyên nghiệp
-                      </h1>
-                      <p className="text fadeInUp animated">
-                        Không ngừng nâng cao kiến thức và kỹ năng để đem lại
-                        dịch vụ tốt nhất cho Quý khách hàng
-                      </p>
-
-                      <button
-                        type="button"
-                        data-source="HomeTop"
-                        data-bs-toggle="modal"
-                        data-bs-target=".contact-modal"
-                        className="btn btn-primary rounded-10 fadeInUp animated"
-                      >
-                        LIÊN HỆ JANCY
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="owl-item cloned" style={{ width: "1440px" }}>
-                <div className="item">
-                  <div
-                    className="backgroundImage desktop"
-                    style={{
-                      backgroundImage:
-                        "url('https://hellojancy.com/images/jancy-banner%20%282%29-42964.jpg')",
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  ></div>
-                  <div
-                    className="backgroundImage mobile"
-                    style={{
-                      backgroundImage:
-                        "url('https://hellojancy.com/images/hello-jancy-banner-phone-5%20%288%29-72949.jpg')",
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  ></div>
-                  <div className="container container-home">
-                    <div className="home-carousel-content">
-                      <h1 className="title">Welcome to Jancy</h1>
-                      <p className="text"></p>
-
-                      <button
-                        type="button"
-                        data-source="HomeTop"
-                        data-bs-toggle="modal"
-                        data-bs-target=".contact-modal"
-                        className="btn btn-primary rounded-10"
-                      >
-                        LIÊN HỆ JANCY
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="owl-item cloned" style={{ width: "1440px" }}>
-                <div className="item">
-                  <div
-                    className="backgroundImage desktop"
-                    style={{
-                      backgroundImage:
-                        "url('https://hellojancy.com/images/jancy-BANNER%20%281%29.jpg')",
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  ></div>
-                  <div
-                    className="backgroundImage mobile"
-                    style={{
-                      backgroundImage:
-                        "url('https://hellojancy.com/images/hello-jancy-banner-phone-7.jpg')",
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  ></div>
-                  <div className="container container-home">
-                    <div className="home-carousel-content">
-                      <h1 className="title">
-                        Tư Vấn Đầu Tư Bất Động Sản Toàn cầu
-                      </h1>
-                      <p className="text">
-                        Phân tích xu hướng thị trường, đánh giá tiềm năng đầu
-                        tư và phát triển chiến lược đầu tư phù hợp với mục
-                        tiêu của khách{" "}
-                      </p>
-
-                      <button
-                        type="button"
-                        data-source="HomeTop"
-                        data-bs-toggle="modal"
-                        data-bs-target=".contact-modal"
-                        className="btn btn-primary rounded-10"
-                      >
-                        XEM DANH MỤC BĐS
                       </button>
                     </div>
                   </div>
@@ -344,5 +178,6 @@ export default function Section1() {
       </section>
 
     </>
+
   );
 }

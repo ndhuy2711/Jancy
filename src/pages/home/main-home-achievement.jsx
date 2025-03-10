@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function HomeAchievement() {
+  useEffect(() => {
+    window.$(document).ready(function () {
+      window.$('.achievement-section-owl-carousel').owlCarousel({
+        items: 4,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false
+      });
+    });
+  }, [])
   return (
     <section className="section achievement-section">
       <div className="container container-home">
@@ -18,12 +29,12 @@ export default function HomeAchievement() {
             <div
               className="owl-stage"
               style={{
-                transform: "translate3d(-1398px, 0px, 0px)",
+                transform: "translate3d(-1573px, 0px, 0px)",
                 transition: "0.5s",
-                width: 3357,
+                width: 3777
               }}
             >
-              <div className="owl-item cloned" style={{ width: "279.75px" }}>
+              <div className="owl-item cloned" style={{ width: "314.75px" }}>
                 <div className="item achievement-section-slide-item">
                   <a href="#" target="_blank">
                     <img
@@ -33,57 +44,14 @@ export default function HomeAchievement() {
                   </a>
                 </div>
               </div>
-              <div className="owl-item cloned" style={{ width: "279.75px" }}>
+              <div className="owl-item cloned" style={{ width: "314.75px" }}>
                 <div className="item achievement-section-slide-item">
                   <a href="#" target="_blank">
-                    <img
-                      src="https://hellojancy.com/images/logo-soha.jpg"
-                      alt=""
-                    />
+                    <img src="https://hellojancy.com/images/logo-soha.jpg" alt="" />
                   </a>
                 </div>
               </div>
-              <div className="owl-item cloned" style={{ width: "279.75px" }}>
-                <div className="item achievement-section-slide-item">
-                  <a href="#" target="_blank">
-                    <img
-                      src="https://hellojancy.com/images/logo-ananda.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="owl-item cloned" style={{ width: "279.75px" }}>
-                <div className="item achievement-section-slide-item">
-                  <a href="#" target="_blank">
-                    <img
-                      src="https://hellojancy.com/images/V2%20Developers%20logo-37738.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="owl-item" style={{ width: "279.75px" }}>
-                <div className="item achievement-section-slide-item">
-                  <a href="#" target="_blank">
-                    <img
-                      src="https://hellojancy.com/images/Aristo%20Developers%20logo-97166.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="owl-item active" style={{ width: "279.75px" }}>
-                <div className="item achievement-section-slide-item">
-                  <a href="#" target="_blank">
-                    <img
-                      src="https://hellojancy.com/images/logo-soha.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="owl-item active" style={{ width: "279.75px" }}>
+              <div className="owl-item cloned" style={{ width: "314.75px" }}>
                 <div className="item achievement-section-slide-item">
                   <a href="#" target="_blank">
                     <img
@@ -93,7 +61,7 @@ export default function HomeAchievement() {
                   </a>
                 </div>
               </div>
-              <div className="owl-item active" style={{ width: "279.75px" }}>
+              <div className="owl-item cloned" style={{ width: "314.75px" }}>
                 <div className="item achievement-section-slide-item">
                   <a href="#" target="_blank">
                     <img
@@ -103,49 +71,7 @@ export default function HomeAchievement() {
                   </a>
                 </div>
               </div>
-              <div
-                className="owl-item cloned active"
-                style={{ width: "279.75px" }}
-              >
-                <div className="item achievement-section-slide-item">
-                  <a href="#" target="_blank">
-                    <img
-                      src="https://hellojancy.com/images/Aristo%20Developers%20logo-97166.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="owl-item cloned" style={{ width: "279.75px" }}>
-                <div className="item achievement-section-slide-item">
-                  <a href="#" target="_blank">
-                    <img
-                      src="https://hellojancy.com/images/logo-soha.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="owl-item cloned" style={{ width: "279.75px" }}>
-                <div className="item achievement-section-slide-item">
-                  <a href="#" target="_blank">
-                    <img
-                      src="https://hellojancy.com/images/logo-ananda.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="owl-item cloned" style={{ width: "279.75px" }}>
-                <div className="item achievement-section-slide-item">
-                  <a href="#" target="_blank">
-                    <img
-                      src="https://hellojancy.com/images/V2%20Developers%20logo-37738.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
+              
             </div>
           </div>
           <div className="owl-nav disabled">
