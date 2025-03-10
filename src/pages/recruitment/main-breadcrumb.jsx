@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function RecruitmentBreadcrumb() {
   return (
@@ -6,10 +7,10 @@ export default function RecruitmentBreadcrumb() {
       <div className="container container-recruitment">
         <ul>
           <li className="breadcrumb-item">
-            <a href="/">Trang chủ</a>
+            <Link tohref="/">Trang chủ</Link>
           </li>
           <li className="breadcrumb-item active">
-            <a href="/tuyen-dung">Tham gia với chúng tôi</a>
+            <Link tohref="/tuyen-dung">Tham gia với chúng tôi</Link>
           </li>
         </ul>
       </div>

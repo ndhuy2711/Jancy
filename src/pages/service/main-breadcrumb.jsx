@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function ServiceBreadcrumb() {
   return (
@@ -6,10 +7,10 @@ export default function ServiceBreadcrumb() {
       <div className="container container-members">
         <ul>
           <li className="breadcrumb-item">
-            <a href="/">Trang chủ</a>
+            <Link tof="/">Trang chủ</Link>
           </li>
           <li className="breadcrumb-item active">
-            <a href="/doi-ngu">Đội ngũ</a>
+            <Link tof="/doi-ngu">Đội ngũ</Link>
           </li>
         </ul>
       </div>

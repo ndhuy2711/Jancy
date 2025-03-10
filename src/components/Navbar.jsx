@@ -2,6 +2,7 @@ import Tiktok from "../images/icons/tiktok0.svg";
 import Facebook from "../images/icons/facebook0.svg"
 import LinkedIn from "../images/icons/linkedin0.svg";
 import React from "react";
+import { Link } from "react-router"
 
 export default function Navbar() {
   return (
@@ -11,13 +12,13 @@ export default function Navbar() {
       style={{ backgroundColor: "rgb(0, 0, 0)", top: "40px" }}
     >
       <section className="wrapper container container-header">
-        <a href="/" className="brand">
+        <Link to="/" className="brand">
           <img
             src="https://hellojancy.com/images/Jancy-nav-logo%20%282%29-49808.png"
             alt="Jancy"
             style={{ maxHeight: "35px" }}
           />
-        </a>
+        </Link>
         <div id="isStickyMenu"></div>
         <div className="burger" id="burger">
           <span className="burger-line "></span>
@@ -28,9 +29,9 @@ export default function Navbar() {
         <nav className="navbar" id="navbar">
           <ul className="menu" id="menu">
             <li className="menu-item menu-dropdown">
-              <a href="/du-an" className="menu-link">
+              <Link to="/du-an" className="menu-link">
                 Dự án
-              </a>
+              </Link>
 
               <div
                 className="submenu submenu-grid"
@@ -43,27 +44,27 @@ export default function Navbar() {
                       <div className="col">
                         <ul>
                           <li className="submenu-item">
-                            <a href="/du-an/can-ho" className="submenu-link">
+                            <Link to="/du-an/can-ho" className="submenu-link">
                               Căn hộ
-                            </a>
+                            </Link>
                           </li>
                           <li className="submenu-item">
-                            <a href="/du-an/biet-thu" className="submenu-link">
+                            <Link to="/du-an/biet-thu" className="submenu-link">
                               Biệt thự
-                            </a>
+                            </Link>
                           </li>
                           <li className="submenu-item">
-                            <a href="/du-an/nha-pho" className="submenu-link">
+                            <Link to="/du-an/nha-pho" className="submenu-link">
                               Nhà phố
-                            </a>
+                            </Link>
                           </li>
                           <li className="submenu-item">
-                            <a
-                              href="/du-an/khu-nghi-duong-sinh-thai"
+                            <Link
+                              to="/du-an/khu-nghi-duong-sinh-thai"
                               className="submenu-link"
                             >
                               Khu nghỉ dưỡng
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -75,52 +76,52 @@ export default function Navbar() {
                       <div className="col">
                         <ul>
                           <li className="submenu-item">
-                            <a
-                              href="/du-an/danh-muc/bat-dong-san-dubai"
+                            <Link
+                              to="/du-an/danh-muc/bat-dong-san-dubai"
                               className="submenu-link"
                             >
                               Dubai
-                            </a>
+                            </Link>
                           </li>
                           <li className="submenu-item">
-                            <a
-                              href="/du-an/danh-muc/bat-dong-san-hy-lap"
+                            <Link
+                              to="/du-an/danh-muc/bat-dong-san-hy-lap"
                               className="submenu-link"
                             >
                               Hy Lạp
-                            </a>
+                            </Link>
                           </li>
                           <li className="submenu-item">
-                            <a
-                              href="/du-an/danh-muc/bat-dong-san-my-hoa-ky"
+                            <Link
+                              to="/du-an/danh-muc/bat-dong-san-my-hoa-ky"
                               className="submenu-link"
                             >
                               Mỹ (Hoa Kỳ)
-                            </a>
+                            </Link>
                           </li>
                           <li className="submenu-item">
-                            <a
-                              href="/du-an/danh-muc/bat-dong-san-sip"
+                            <Link
+                              to="/du-an/danh-muc/bat-dong-san-sip"
                               className="submenu-link"
                             >
                               Síp
-                            </a>
+                            </Link>
                           </li>
                           <li className="submenu-item">
-                            <a
-                              href="/du-an/danh-muc/bat-dong-san-thai-lan"
+                            <Link
+                              to="/du-an/danh-muc/bat-dong-san-thai-lan"
                               className="submenu-link"
                             >
                               Thái Lan
-                            </a>
+                            </Link>
                           </li>
                           <li className="submenu-item">
-                            <a
-                              href="/du-an/danh-muc/bat-dong-san-uc"
+                            <Link
+                              to="/du-an/danh-muc/bat-dong-san-uc"
                               className="submenu-link"
                             >
                               Úc
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -133,15 +134,15 @@ export default function Navbar() {
               </div>
             </li>
             <li className="menu-item menu-dropdown">
-              <a href="/bai-viet" className="menu-link  ">
+              <Link to="/bai-viet" className="menu-link  ">
                 Bài viết
-              </a>
+              </Link>
 
               <ul className="submenu">
                 <li className="submenu-item">
-                  <a href="/bai-viet/danh-muc/tin-tuc" className="submenu-link">
+                  <Link to="/bai-viet/danh-muc/tin-tuc" className="submenu-link">
                     Tin tức
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="nav-toggle-mobile-submenu">
@@ -149,29 +150,29 @@ export default function Navbar() {
               </div>
             </li>
             <li className="menu-item">
-              <a href="/doi-ngu" className="menu-link  ">
+              <Link to="/doi-ngu" className="menu-link  ">
                 DỊCH VỤ
-              </a>
+              </Link>
             </li>
             <li className="menu-item">
-              <a href="/truyen-thong" className="menu-link  ">
+              <Link to="/truyen-thong" className="menu-link  ">
                 Truyền thông
-              </a>
+              </Link>
             </li>
             <li className="menu-item">
-              <a href="/tuyen-dung" className="menu-link  ">
+              <Link to="/tuyen-dung" className="menu-link  ">
                 Tuyển dụng
-              </a>
+              </Link>
             </li>
             <li className="menu-item">
-              <a href="/ve-toi" className="menu-link  ">
+              <Link to="/ve-toi" className="menu-link  ">
                 Giới thiệu
-              </a>
+              </Link>
             </li>
             <li className="menu-item sub-menu-item">
-              <a href="tel:0909977939" target="_blank" className="menu-link ">
+              <Link to="tel:0909977939" target="_blank" className="menu-link ">
                 Hotline: (+84) 909 977 939
-              </a>
+              </Link>
             </li>
             <li className="menu-item sub-menu-item">
               <a

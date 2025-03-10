@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function VillaBreadcrumb() {
   return (
@@ -6,13 +7,13 @@ export default function VillaBreadcrumb() {
       <div className="container container-projects">
         <ul>
           <li className="breadcrumb-item">
-            <a href="/">Trang chủ</a>
+            <Link to href="/">Trang chủ</Link>
           </li>
           <li className="breadcrumb-item">
-            <a href="/du-an">Dự án</a>
+            <Link to href="/du-an">Dự án</Link>
           </li>
           <li className="breadcrumb-item active">
-            <a href="/du-an/biet-thu#">Biệt thự</a>
+            <Link to href="/du-an/biet-thu#">Biệt thự</Link>
           </li>
         </ul>
       </div>

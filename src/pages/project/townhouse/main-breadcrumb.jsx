@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function TownHouseBreadcrumb() {
   return (
@@ -6,13 +7,13 @@ export default function TownHouseBreadcrumb() {
       <div className="container container-projects">
         <ul>
           <li className="breadcrumb-item">
-            <a href="/">Trang chủ</a>
+            <Link to href="/">Trang chủ</Link>
           </li>
           <li className="breadcrumb-item">
-            <a href="/du-an">Dự án</a>
+            <Link to href="/du-an">Dự án</Link>
           </li>
           <li className="breadcrumb-item active">
-            <a href="/du-an/nha-pho#">Nhà phố</a>
+            <Link to href="/du-an/nha-pho#">Nhà phố</Link>
           </li>
         </ul>
       </div>

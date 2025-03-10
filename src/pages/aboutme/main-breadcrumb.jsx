@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function AboutMeBreadcrumb() {
   return (
@@ -6,10 +7,10 @@ export default function AboutMeBreadcrumb() {
       <div className="container container-about">
         <ul>
           <li className="breadcrumb-item">
-            <a href="/">Trang chủ</a>
+            <Link to="/">Trang chủ</Link>
           </li>
           <li className="breadcrumb-item active">
-            <a href="/ve-toi">Giới thiệu</a>
+            <Link to="/ve-toi">Giới thiệu</Link>
           </li>
         </ul>
       </div>

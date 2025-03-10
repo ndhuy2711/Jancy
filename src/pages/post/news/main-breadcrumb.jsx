@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function NewsBreadcrumb() {
   return (
@@ -6,13 +7,13 @@ export default function NewsBreadcrumb() {
       <div className="container container-news">
         <ul>
           <li className="breadcrumb-item">
-            <a href="/">Trang chủ</a>
+            <Link to="/">Trang chủ</Link>
           </li>
           <li className="breadcrumb-item">
-            <a href="/bai-viet">Bài viết</a>
+            <Link to="/bai-viet">Bài viết</Link>
           </li>
           <li className="breadcrumb-item active">
-            <a href="/bai-viet/danh-muc/tin-tuc#">Tin tức</a>
+            <Link to="/bai-viet/danh-muc/tin-tuc#">Tin tức</Link>
           </li>
         </ul>
       </div>

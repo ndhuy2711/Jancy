@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function MediaBreadcrumb() {
   return (
@@ -6,10 +7,10 @@ export default function MediaBreadcrumb() {
       <div className="container container-members">
         <ul>
           <li className="breadcrumb-item">
-            <a href="/">Trang chủ</a>
+            <Link to="/">Trang chủ</Link>
           </li>
           <li className="breadcrumb-item active">
-            <a href="/social">Truyền thông</a>
+            <Link to="/social">Truyền thông</Link>
           </li>
         </ul>
       </div>
